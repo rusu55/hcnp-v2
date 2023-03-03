@@ -3,17 +3,22 @@
 .contact{
     margin: 10rem 0;
     height: 60rem;
-   
+   .row{
+    justify-content: center;
+   }
 
     input{
     width: 100%;
     outline: none;
     border: 1px solid #eee;
-    background-color: #eceff3;
+    background-color: #ebf5f5;
     color: #888;
     font-weight: inherit;
     padding: 3px 20px;
     height: 50px;
+    }
+    textarea{
+        background-color: #ebf5f5;
     }
 
     .content-wrap{
@@ -76,11 +81,11 @@
     }
     
     .btn--form{
-        background-color: #45260a;
+        background-color: #e12454;
         color: #fdf2e9;
         align-self: end;
         padding: 1.2rem;
-        width: 30%;
+        width: 90%;
         align-items: center;
     }
 }

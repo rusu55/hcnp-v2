@@ -28,13 +28,10 @@ const ContactForm = () => {
             </div>
         </div>
         <div className="row gap-2 mt-2">
-          <div className="col-12">
-          <label>Full name *</label>
-          <textarea cols="40" rows="10"></textarea>
-          </div>          
-        </div>
-        <div className="col-12  flex">
-            <button className="btn btn--form">Send Message</button>
+          
+            <label>Full name *</label>
+            <textarea cols="40" rows="10"></textarea>                     
+            <button className="btn btn--form">Send Message</button>        
         </div>
     </>    
   )

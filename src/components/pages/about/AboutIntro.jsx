@@ -6,13 +6,13 @@ const AboutIntro = () => {
     <div className='about__intro'>
         <div className="row">
             <div className="col-12">
-                <h3 className='about__intro_heading'>Introducing</h3>
-                <h3 className="about_secondaryheading pt-2">“I highly appreciate your help for my family in our most difficult time. We owed everyone at @healsoul a big thank you and our life.”                    
+                <h3 className='about__intro_heading' data-aos="fade-in">Introducing</h3>
+                <h3 className="about_secondaryheading pt-2" data-aos="fade-up">“I highly appreciate your help for my family in our most difficult time. We owed everyone at @healsoul a big thank you and our life.”                    
                 </h3>
-                <p className='paragraph'>More than 15 years ago, a small group of families, community activists, and civil servants in New York came together to form an organization called HealSoul. They provide services for those struggling to care for a loved one who did not "fit" into traditional health systems: stroke, Parkinson's, Alzheimer's disease, traumatic brain injury, debilitating disorders, etc. The diagnoses were different, but the families shared common challenges: few community resources, isolation, lack of information, and drastic changes in family roles.</p>
+                <p className='paragraph' data-aos="fade-up">More than 15 years ago, a small group of families, community activists, and civil servants in New York came together to form an organization called HealSoul. They provide services for those struggling to care for a loved one who did not "fit" into traditional health systems: stroke, Parkinson's, Alzheimer's disease, traumatic brain injury, debilitating disorders, etc. The diagnoses were different, but the families shared common challenges: few community resources, isolation, lack of information, and drastic changes in family roles.</p>
             </div>
         </div>
-        <div className="row mt-2">
+        <div className="row mt-2" data-aos="fade-up">
             <div className="col-12">
                 <h3 className='about__heading'>Our History</h3>
                 <p className='paragraph'>Home Care Nursing Professionals is a Home Nursing Agency founded by Bogdan Tarau and John McCarthy.</p>
@@ -22,12 +22,12 @@ const AboutIntro = () => {
                 <p className='paragraph'>Our company values are derived from years of experience in the home health industry and through identification of areas that will improve our clients’ well being.</p>
             </div>
         </div>
-        <div className="row mt-2">
+        <div className="row mt-2" data-aos="fade-in">
             <div className="col-12">
             <h3 className='about__heading'>Skills</h3>
             </div>            
         </div>
-        <div className="row">
+        <div className="row" data-aos="fade-right">
             <div className="col-6">
                 <p className="about__skills">
                     <BiCheck size={25} className='icon'/>
@@ -75,10 +75,10 @@ const AboutIntro = () => {
             </div>
         </div>
         <div className="row mt-2">
-            <div className="col-12">
-                <h3 className='about__heading'>Mission and Values</h3>
+            <div className="col-12" data-aos="fade-right">
+                <h3 className='about__heading' data-aos="fade-in">Mission and Values</h3>
                 <h3 className="about_secondaryheading">Striving, Helping, Collaborating</h3>
-                <p className="about__skills">
+                <p className="about__skills" >
                     <BiCheck size={25} className='icon'/>
                     Striving to help clients and their families recuperate and thrive in the comfort of their own homes.
                 </p> 

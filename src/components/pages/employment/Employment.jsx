@@ -8,7 +8,7 @@ import Img3 from '../../../assets/3.jpg';
 const Employment = () => {
   return (
     <section id='employment' className='employment pt-4 pb-4'>
-            <div className="container">
+            <div className="container" data-aos="fade-right">
                 <div className="row">                    
                     <div className="col-6 blue">
                         <div className="card pl-8 pr-8 mt-10">

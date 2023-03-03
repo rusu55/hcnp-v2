@@ -52,7 +52,7 @@ const Testimonials = ({reviews}) => {
     }
 
   return (
-    <section className="testimonials">
+    <section className="testimonials" data-aos="fade-right">
         <div className="container">
             <div className="wrapper">
                 <div className="inner">
