@@ -1,0 +1,71 @@
+@use '../abstracts/' as *;
+.employment{
+    background-color: #ebf5f5;
+    .blue{
+        background-color: white;
+    }
+    .icon{
+        color: red;
+    }
+    h4{
+        font-size: 1.8rem;
+        color: #e12454;
+    }
+    .card{
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;            
+            bottom: -2rem;
+            display: block;
+            width: 20rem;
+            height: .2rem;
+            background: #e12454;
+            width: 90%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    
+    }
+    
+    .heading{
+       
+        font-size: 3rem;
+        color: $grey;
+        font-weight: 700;
+        line-height: 4rem;
+        width: 100%;
+        text-align: left;
+        position: relative;
+        margin-bottom: 1rem;   
+        margin-top: 3rem;         
+    }
+    .paragraph{
+        font-size: 1.4rem;
+        line-height: 2.7rem;
+        color: $grey;
+        font-weight: 200;
+        margin-top: 1rem;        
+    }
+
+    img{
+        max-height: 58.5rem;
+        overflow: hidden;
+        display: block;
+       
+    }
+
+    .tasks{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:2rem;
+
+        p{            
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+                padding: .5rem;
+                @include align(flex, null, center, null);
+            
+        }
+    }
+}

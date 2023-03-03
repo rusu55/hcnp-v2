@@ -1,0 +1,53 @@
+@use '../abstracts/' as *;
+
+.about{
+    margin: 10rem 0; 
+    
+    &__heading{
+       
+            font-size: 3rem;
+            color: $grey;
+            font-weight: 700;
+            line-height: 4rem;
+            width: 100%;
+            text-align: left;
+            position: relative;
+            margin-bottom: 1rem;   
+            margin-top: 3rem;         
+    }
+    .paragraph{
+        font-size: 1.4rem;
+        line-height: 2.7rem;
+        color: $grey;
+        font-weight: 200;
+        margin-top: 1rem;
+        padding-right: 2rem;
+    }
+    .icon{
+        color: red;
+    }
+       
+}
+
+.about__intro_heading{
+    width: 35%;
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 4rem;
+    background: linear-gradient(35deg, $black 40%, $red 40%);
+    color: transparent;
+    background-clip: text;
+}
+.about_secondaryheading{
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+}
+
+.about__skills{
+    font-size: 1.4rem;
+    line-height: 2.7rem;
+    padding: .5rem;
+    @include align(flex, null, center, null);
+}

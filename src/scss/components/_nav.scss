@@ -1,0 +1,64 @@
+@use '../abstracts/'as *;
+
+.logo {
+    
+    height: 7rem;
+    object-fit: cover;
+}
+
+.header{
+    @include align(flex, space-between, center, 7rem);
+    padding: 0 4.8rem; 
+    background: $white;   
+
+   
+}
+.fixedNav{
+    top: 0;
+    left: 0;   
+    z-index:999;
+    transform: translateY(-6rem);
+    opacity: 0;
+}
+
+.floatNav{
+   background-color: rgba(255, 255, 255, 0.8);;
+    z-index:999;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;    
+    transform: translateY(0);
+    opacity: 1;
+    transition: all .7s linear;
+    -webkit-box-shadow: 0 .5rem 1rem rgb(0 0 0 / 0.2);
+    -moz-box-shadow: 0 .5rem 1rem rgb(0 0 0 / 0.2);
+     box-shadow: 0 .5rem 1rem rgb(0 0 0 / 0.2);
+    
+}
+
+.main__nav{
+    &__list{
+        list-style: none;       
+        display: flex;
+        gap: 3.2rem;
+        margin-right: 20rem;;
+    }
+
+    &__link:link,
+    &__link:visited
+    {
+        text-decoration: none;
+        color: $grey;
+        font-weight: 500;
+        font-size: 1.8rem;
+        transition: all 0.3s;
+    }
+
+    &__link:hover,
+    &__link:active
+    {
+       color:$red;
+    }
+}
+
