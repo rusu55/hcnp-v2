@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <>
       <Hero data={carousel} />
-      <Intro />
+      <Intro data={homePageState.homePage.data} />
     </>
   )
 }
