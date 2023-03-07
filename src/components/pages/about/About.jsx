@@ -1,5 +1,6 @@
 import React from 'react'
-import AboutIntro from './AboutIntro'
+import AboutIntro from './AboutIntro';
+import AboutRight from './AboutRight';
 
 const About = () => {
   return (
@@ -7,7 +8,7 @@ const About = () => {
       <div className="container">
         <div className="row">
           <div className="col-8"><AboutIntro/></div>
-          <div className="col-4">SDdfFFDGFDGH</div>
+          <div className="col-4"><AboutRight/></div>
         </div>
       </div>
     </section>
