@@ -25,7 +25,7 @@
     "start": " set PORT=8080 && react-scripts start",
     "scss": "sass src/main.scss src/main.css --watch --no-source-map --style compressed",
     "dev": "concurrently \" npm start \" \" npm run scss  \"",
-    "build": "CI= react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
