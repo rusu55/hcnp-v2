@@ -17,7 +17,7 @@ const About = () => {
       <div className="container">
         <div className="row">
           <div className="col-8"><AboutIntro/></div>
-          <div className="col-4"><AboutRight/></div>
+          <div className="col-4 row"><AboutRight/></div>
         </div>
       </div>
     </section>

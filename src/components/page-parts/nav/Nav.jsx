@@ -1,10 +1,17 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import Logo from '../../../assets/logo.jpg'
 
 const Nav = () => {
 
+  const [toggle, setToggle] = useState(false);
+
+
   let oldValue = 0;
   let newValue =0;
+
+  useEffect(()=>{
+      setToggle()
+  }, []);
 
   useEffect(()=>{
       window.addEventListener('scroll', handleScroll)
@@ -29,19 +36,32 @@ const Nav = () => {
     oldValue = newValue   
   }
 
+  const handleToggle = () =>{
+    setToggle(!toggle)
+  };
+
   return (
-    <header className='header'>      
+    <>
+    <nav className='nav'>
+      <div className='navbar'>
         <img className='logo' alt="" src={Logo} />
-        <nav className='main__nav'>
-            <ul className='main__nav__list'>
+        <ul className={toggle ? 'flex nav-open' : 'flex nav-close'} onClick={()=>handleToggle()}>
                 <li><a className='main__nav__link' href='#'>Home</a></li>
                 <li><a className='main__nav__link' href='#about'>About Us</a></li>
                 <li><a className='main__nav__link' href='#services'>Services</a></li>
                 <li><a className='main__nav__link' href='#employment'>Employment</a></li>
                 <li><a className='main__nav__link' href='#contact'>Contat Us</a></li>
             </ul>
-        </nav>      
-    </header>
+      </div>      
+       </nav> 
+       
+        <div className={toggle ? 'toggle-close' : 'toggle-open'} onClick={()=>handleToggle()}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div> 
+        <div className="toggle__background"></div>               
+    </> 
   )
 }
 

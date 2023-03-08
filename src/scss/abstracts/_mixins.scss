@@ -41,3 +41,11 @@
     width: $width;
     height: $height;      
 }
+
+@mixin toggleSpans($background, $width, $height, $margin-top){
+    display: block;
+    background: $background;
+    width: $width;
+    height: $height;
+    margin-top: $margin-top;
+}

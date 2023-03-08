@@ -8,7 +8,7 @@ const ServicesList = ({services}) => {
         setCurrent(index)
     }
 
-  return services.length > 0 ? services.map((service, index) =>(
+  return services.length > 0 ? services.map((service, index) =>(    
     <div className="services__list" key = {index}>
         <h4 className="services__list__heading" onClick={()=>showDetails(index)}>
             <BiPlusCircle className='icon' size={25} />

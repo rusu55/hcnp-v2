@@ -27,6 +27,11 @@
      .icon{
         color:#e12454;
      }
+     &__container{
+        @include responsive(medium){
+            padding-top: 5rem;
+        }
+     }
 
     &__list{
         margin-bottom: .5rem;
@@ -73,6 +78,12 @@
 }
 
  /* -------------------- Gallery ----------------------- */
+ @include responsive(medium){
+    .services__gallery{
+        justify-content: center;
+    }    
+ }
+
  .gallery{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
