@@ -7,7 +7,7 @@ const Hero = ({data}) =>{
   const slideLength = data.length;
   const autoScroll = true;
 	let slideInterval
-	let intervalTime = 6000;
+	let intervalTime = 8000;
 
   useEffect(()=> {setCurrentSlide(0)}, []);
   useEffect(()=>{
@@ -23,20 +23,17 @@ const Hero = ({data}) =>{
 		setCurrentSlide(currentSlide === slideLength -1 ? 0 : currentSlide + 1)
 	}
 
-  return(
-      <div className='carousel'>
-        <div className='carousel__inner'  style={{transform: `translateX(${-currentSlide * 100}%)`}}>
-          {data.map((slide, index) =>(
-            <div className={index === currentSlide ? 'carousel__inner__item current' : 'carousel__inner__item' } key={index}>					
-                <img src={slide.image} alt='slide'/>
-                {index === currentSlide && (
-                <div className='content'>							
-                      <h1>{slide.title}</h1>
-                      <p>{slide.text}</p>							
-                </div>	)}							
-          </div>
-          ))}			
-        </div>
+  return (
+    <div className="slider">
+        {data.map((slide,index)=>(
+            <div className={index === currentSlide ? 'slide-item current' : 'slide-item'} id={index === currentSlide -1 ? 'close' : ''}>
+                <div className={index === currentSlide ? 'item current' : 'item'}>
+                    <h2>{slide.title}</h2>
+                    <p>{slide.text}</p>
+                </div>
+                <img src={`../../../assets/${slide.image}`} alt="" />
+            </div>
+        ))}        
     </div>
   )
 }

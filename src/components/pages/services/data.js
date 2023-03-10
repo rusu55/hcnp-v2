@@ -7,5 +7,5 @@ export const services = [
 ]
 
 export const gallery = [
-    {id:1, img: '1.jpg'}, {id:2, img: '2.jpg'}, {id:3, img: '3.jpg'}, {id:4, img: '4.jpg'}, {id:5, img: '5.jpg'}, {id:6, img: '6.jpg'}, {id:7, img: '7.jpg'}, {id:8, img: '8.jpg'}
+    {id:1, img: 'a.jpg'}, {id:2, img: 'b.jpg'}, {id:3, img: 'c.jpg'}, {id:4, img: 'd.jpg'}, {id:5, img: 'e.jpg'}, {id:6, img: 'f.jpg'}, {id:7, img: 'g.jpg'}, {id:8, img: '8.jpg'}, {id:8, img: 'h.jpg'}
 ]

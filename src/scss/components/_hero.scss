@@ -1,68 +1,103 @@
 @use '../abstracts/' as *;
 
-.carousel{
+.slider{
     @include position(relative, 0, 0, null, null, 100%, 60vh);
     overflow: hidden;   
     
-  
-
-    &__inner{
-        white-space: nowrap;
-        transition: ease 1s;
-        
-      
-        &__item{
-            display: inline-block;
-            width: 100%;
-            height: 100%;           
-            transition: all 0.5s ease;
-
-            img {
-                   object-fit: cover;
-                   width: 100%;
-                   height: 60vh;
-                  
-                }   
-        }      
-          .current{
-           opacity: 1;
-           transform: translateX(0);
-           
-        }
-    }
-    .content {
+    .slide-item{
       position: absolute;
-      top: 23rem;
-      left: 5rem;
-      opacity: 0;
-      width: 50%;
-      color: #fff;
-      padding: 3rem;
-      background: rgba(0, 0, 0, 0.3);
-      animation: slide-up 1s cubic-bezier(0, .9, .3, 1.2);
-      animation-delay: 1.5s;
-      animation-fill-mode: forwards;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      visibility:hidden;
+      opacity: 0;   
+
+      img{
+        position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }    
+    }
+
+    .slide-item.current{    
+      animation: slider 10s linear forwards;
+      animation-delay: -0.3s;    
       visibility: hidden;
+      opacity: 0;
     }
-  
-    .current .content {
-      opacity: 1;
-      transform: translateX(0);
-      transition: all 0.5s ease;
-    }
-  
-    @keyframes slide-up {
-      0% {
-        opacity: 0;     
-        top: 30rem;
-      }
-      100% {
-        visibility: visible;
-        top: 25rem;
-      }
-    }
+
+  }
+  .slider .slide-item .item.current{
+    position: absolute;
+    top: 50rem;
+    left: 5rem;
+    opacity: 0;
+    width: 50%;
+    color: #fff;
+    padding: 3rem;
+    background: rgba(0, 0, 0, 0.3);
+    animation: slide-up 6s cubic-bezier(0, .9, .3, 1.2);
+    visibility:visible;
+    
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    z-index: 999;
+  }
+
+  .slider .slide-item .item h2{
+    font-size: 20px;
+  }
+  .slider .slide-item .item p{
+    font-size: 18px;
+    margin: 10px 0 0;
+  }
+
+
+@keyframes slider{
+  0%{
+    visibility: hidden;
+    opacity: 0;
+  }
+  10%{
+    visibility: visible;
+    opacity: 1;
+  }
+  70%{
+    visibility: visible;
+    opacity: 1;
+  }
+  97%, 100%{
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
+@keyframes slide-up {
+  0% {
+    opacity: 0;     
+    top: 50rem;
+  }
+   15%{
+    visibility: visible;
+    opacity: 1;
+    top: 45rem; 
+  }
+  80%{
+      visibility: visible;
+      opacity: 1;
+      top: 45rem; 
+    }
+  
+  90%, 100% {
+    visibility: visible;   
+    opacity: 0; 
+    top: 50rem;    
+  }
+}
 
   
  
