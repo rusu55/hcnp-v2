@@ -33,7 +33,7 @@
   }
   .slider .slide-item .item.current{
     position: absolute;
-    top: 50rem;
+    top: 60%;
     left: 5rem;
     opacity: 0;
     width: 50%;
@@ -79,23 +79,24 @@
 @keyframes slide-up {
   0% {
     opacity: 0;     
-    top: 50rem;
+    top: 80%;
+    
   }
    15%{
     visibility: visible;
     opacity: 1;
-    top: 45rem; 
+    top: 60%;    
   }
   80%{
       visibility: visible;
       opacity: 1;
-      top: 45rem; 
+      top: 60%;     
     }
   
   90%, 100% {
     visibility: visible;   
     opacity: 0; 
-    top: 50rem;    
+    top: 80%;    
   }
 }
 

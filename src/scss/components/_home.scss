@@ -4,7 +4,7 @@
     margin: 8rem 0;
 
     &__heading{
-        font-size: 4rem;
+        font-size: 4rem;        
         color: $grey;
         font-weight: 700;
         line-height: 4rem;
@@ -25,14 +25,6 @@
             left: 50%;
             transform: translateX(-50%);
         }
-    }
-
-    .paragraph{
-        font-size: 1.6rem;
-        line-height: 2.7rem;
-        color: $grey;
-        font-weight: 200;
-        margin-top: 1rem;
-        padding-right: 2rem;
-    }
+      
+    } 
 }
