@@ -8,7 +8,7 @@ const Intro = ({data}) => {
             <div className="row">
                 <div className="col-12">                  
                     <h2 className='intro__heading'>{data.heading}</h2>
-                    <p className='paragraph'>{data.paragraph}</p>         
+                    <p className='paragraph'>{data.paragraph}</p>                          
                 </div>
             </div>
         </div>

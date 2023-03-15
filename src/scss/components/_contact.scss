@@ -1,8 +1,8 @@
 @use '../abstracts/' as *;
 
 .contact{
-    margin: 10rem 0;
-    
+    margin: 10rem 0;   
+
    .row{
     justify-content: center;
    }
@@ -42,7 +42,7 @@
                 width: 20rem;
                 height: .2rem;
                 background: #e12454;
-                width: 90%;
+                width: 100%;
                 left: 50%;
                 transform: translateX(-50%);
             }
@@ -51,12 +51,12 @@
         }
     
         .image{
-            width: 100px;
-            margin-right: 20px;
+            width: 10rem;
+            margin-right: 1rem;
             -webkit-flex-shrink: 0;
             -ms-flex-negative: 0;
             flex-shrink: 0;
-            
+            opacity: 0.5;            
         }
     
         .content{
@@ -67,10 +67,10 @@
         }
     
         .heading {
-            font-size: 14px;
+            font-size: 1.4rem;
             text-transform: uppercase;
             letter-spacing: 1px;
-            margin-bottom: 15px;
+            margin-bottom: 1.5rem;
            
         }
         .text{
