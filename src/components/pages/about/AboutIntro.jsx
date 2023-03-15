@@ -6,6 +6,7 @@ const AboutIntro = () => {
     <div className='about__intro'>
         <div className="row">
             <div className="col-12">
+                <h4>About Us</h4>
                 <h3 className='about__intro_heading' data-aos="fade-right">Introducing</h3>
                 <h3 className="about_secondaryheading pt-2" data-aos="fade-right">“I highly appreciate your help for my family in our most difficult time. We owed everyone at @healsoul a big thank you and our life.”                    
                 </h3>
@@ -45,12 +46,12 @@ const AboutIntro = () => {
                 <p className='paragraph'>Our company values are derived from years of experience in the home health industry and through identification of areas that will improve our clients’ well being.</p>
             </div>
         </div>
-        <div className="row mt-2" data-aos="fade-right">
+        <div className="row mt-2" data-aos="fade-right" id="services">
             <div className="col-12">
-            <h3 className='about__heading'>Skills</h3>
+            <h3 className='about__intro_heading mt-5'>Services</h3>
             </div>            
         </div>
-        <div className="row" data-aos="fade-right">
+        <div className="row mt-2" data-aos="fade-right">
             <div className="col-6">
                 <p className="about__skills">
                     <BiCheck size={25} className='icon'/>

@@ -9,10 +9,11 @@ const Services = () => {
   
   
   return (
-    <section id='services' className='services pt-4 pb-4' data-aos="fade-right">
+    <section className='services pt-4 pb-4' data-aos="fade-right">
       <div className="container">
         <div className="row">
           <div className="col-6">
+            
             <h3 className="services__heading">Would you rather stay at home than go into a health care facility ?</h3>
           </div>
           <div className="col-6">
