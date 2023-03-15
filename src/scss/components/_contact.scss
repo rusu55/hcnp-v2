@@ -17,8 +17,17 @@
     padding: 3px 20px;
     height: 50px;
     }
+
+    input:focus{
+        border-color: #e12454;
+    }
+
     textarea{
         background-color: #ebf5f5;
+        resize: none;
+    }
+    textarea:focus{
+        border-color: #e12454;
     }
 
     .content-wrap{

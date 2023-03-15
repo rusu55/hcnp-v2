@@ -23,14 +23,10 @@ const Footer = () => {
             <div className="col-3 flex footer__services">
                 <h3>Services</h3>
                 <ul className='mt-1'>
-                  <li><a href="#">Electrical Repair</a></li>
-                  <li><a href="#">Generators</a></li>
-                  <li><a href="#">Lighting</a></li>
-                  <li><a href="#">Electrical Panels</a></li>
-                  <li><a href="#">New Constructions</a></li>
-                  <li><a href="#">Data and Communications</a></li>
-                  <li><a href="#">Fire Alarms</a></li>
-                  <li><a href="#">EV Charging Station</a></li>
+                  <li><a href="#">Post Surgical Assistance</a></li>
+                  <li><a href="#">Spinal Cord And Traumatic Brain Injuries</a></li>
+                  <li><a href="#">Ventilator Dependence Assistance</a></li>
+                  <li><a href="#">Wheelchair Assistance</a></li>                 
                 </ul>
              </div>
         </div>
@@ -40,22 +36,22 @@ const Footer = () => {
                     <div className="row">
                         <div className="item flex">
                             <FaRegMap size={40} className='icon' />
-                            <p className='ml-1'>Schaumburg, Il</p>
+                            <p className='ml-1'>2625 Central St., Evanston, IL, 60201</p>
                         </div>
                         <div className="item flex">
                           <FaRegEnvelope size={40} className='icon' />
-                          <p className='ml-1'>office@GoElectricalUS.com</p>
+                          <p className='ml-1'>info@hcnpprofessionals.com</p>
                         </div>
                         <div className="item flex">
                           <FaPhoneAlt size={30} className='icon' />
-                          <p className='ml-1'>(347) 935-7504</p>
+                          <p className='ml-1'>847-881-5548</p>
                         </div>
                     </div>
                 </div>
             </div>          
         <div className="row">
             <div className="col-12 footer__bottom">
-               <p>Copyright GoElectrical US</p>
+               <p>Copyright HCNP Home Care Nursing</p>
             </div>
         </div>
     
