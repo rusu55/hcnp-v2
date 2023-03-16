@@ -7,6 +7,12 @@
     justify-content: center;
    }
 
+   .form{
+    @include responsive(small){
+        margin-top: 5rem;
+    }
+   }
+
     input{
     width: 100%;
     outline: none;

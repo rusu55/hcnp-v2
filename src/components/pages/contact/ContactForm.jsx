@@ -3,7 +3,7 @@ import React from 'react'
 const ContactForm = () => {
   return (
     <>
-        <div className="row gap-2">
+        <div className="row gap-2 form">
             <div className="col-5">
                 <label>First Name *</label>                
                 <input type='text' name=''  placeholder='e.g. John Doe' ></input>

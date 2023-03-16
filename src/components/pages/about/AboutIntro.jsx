@@ -20,16 +20,16 @@ const AboutIntro = () => {
                 <h3 className='about__heading' data-aos="fade-in">Mission and Values</h3>
                 <h3 className="about_secondaryheading">Striving, Helping, Collaborating</h3>
                 <p className="about__skills" >
-                    <BiCheck size={25} className='icon'/>
-                    <b>Striving</b>&nbsp; to help clients and their families recuperate and thrive in the comfort of their own homes.
+                    <BiCheck size={25} className='icon'/>&nbsp;
+                    <span><strong>Striving</strong> to help clients and their families recuperate and thrive in the comfort of their own homes.</span>
                 </p> 
                 <p className="about__skills">
-                    <BiCheck size={25} className='icon'/>
-                    <b>Helping</b>&nbsp;people with disabilities be a part of their communities and doing what they love 
+                    <BiCheck size={25} className='icon'/>&nbsp;
+                    <span><strong>Helping</strong> people with disabilities be a part of their communities and doing what they love.</span> 
                 </p>
                 <p className="about__skills">
-                    <BiCheck size={25} className='icon'/>
-                    <b>Collaborating</b>&nbsp; with the Client and their family to reach the best possible health outcomes
+                    <BiCheck size={25} className='icon'/>&nbsp;
+                    <span><strong>Collaborating</strong> with the Client and their family to reach the best possible health outcomes.</span>
                 </p>
                 <p className='paragraph'>We are licensed with the Illinois Department of Public Health as a Home Nursing Agency</p> 
                 <p className='paragraph'>We offer caring Home Nursing Services through hiring dedicated Nurses and Home Health Aides</p> 

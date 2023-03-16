@@ -15,9 +15,9 @@ const Footer = () => {
                 <h3>Navigaiton</h3>
                 <ul className='mt-1'>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About US</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#about">About US</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </div>
             <div className="col-3 flex footer__services">

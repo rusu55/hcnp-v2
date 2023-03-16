@@ -29,6 +29,13 @@
     background: linear-gradient(35deg, $black 40%, $red 40%);
     color: transparent;
     background-clip: text;
+
+    @include responsive(medium){
+        width:30%;
+    }
+    @include responsive(small){
+        width:60%;
+    }
 }
 .about_secondaryheading{
     font-style: italic;
@@ -42,7 +49,8 @@
     font-size: 1.4rem;
     line-height: 2.7rem;
     padding: .5rem;
-    @include align(flex, null, center, null);
+    @include align(flex, null, start, null);
+
 }
 
 

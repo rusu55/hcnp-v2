@@ -19,13 +19,18 @@
             content: '';
             bottom: -2rem;
             display: block;
-            width: 60rem;
+            width: 60%;
             height: .2rem;
             background: #e12454;
             left: 50%;
             transform: translateX(-50%);
+
+           
         }
-      
+
+        @include responsive(small){
+            font-size: 3rem;
+        }      
     } 
 
     .paragraph{
