@@ -10,7 +10,7 @@ import Services from './components/pages/services/Services';
 import Contact from './components/pages/contact/Contact';
 import Employment from './components/pages/employment/Employment';
 import Testimonials from './components/pages/testimonials/Testimonials';
-import NREmployment from './components/pages/employment/NREmployment';
+import EmploymentModal from './components/pages/employment/EmploymentModal';
 
 import { GlobalProvider } from './context/Provider';
 
@@ -25,7 +25,7 @@ function App() {
         <Employment />
         <Contact />
         <Footer />
-        <NREmployment/>
+        <EmploymentModal/>
       </GlobalProvider>
   );
 }

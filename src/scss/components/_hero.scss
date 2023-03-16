@@ -1,6 +1,7 @@
 @use '../abstracts/' as *;
 
 .slider{
+   
     @include position(relative, 0, 0, null, null, 100%, 60vh);
     overflow: hidden;   
     
