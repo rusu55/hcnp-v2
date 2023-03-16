@@ -46,13 +46,6 @@
     margin-bottom: 2rem;
 }
 
-.about__skills{
-    font-size: 1.4rem;
-    line-height: 2.7rem;
-    padding: .5rem;
-    @include align(flex, null, start, null);
-
-}
 
 
 /* --------------------- About Right -------------------- */
@@ -152,5 +145,25 @@
                 }
             }
         }
+      }
+
+      .about__services{
+        margin: .3rem;
+        background: #ebf5f5;
+        padding: 1.5rem;
+        border: 2px solid transparent;
+        border-radius: 0rem;
+        transition: all .3s ease-in;        
+      }
+      .about__services:hover{
+       
+        transform: translateY(-0.5rem);
+      }
+
+      .service__card{        
+            font-size: 1.4rem;
+            line-height: 2.7rem;
+            padding: .5rem;
+            @include align(flex, null, start, null);      
       }
 }

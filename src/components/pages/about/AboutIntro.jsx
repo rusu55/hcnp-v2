@@ -50,55 +50,7 @@ const AboutIntro = () => {
             <div className="col-12">
             <h3 className='about__intro_heading mt-5'>Services</h3>
             </div>            
-        </div>
-        <div className="row mt-2" data-aos="fade-right">
-            <div className="col-6">
-                <p className="about__skills">
-                    <BiCheck size={25} className='icon'/>
-                    Assisting with walking from bed to wheelchair
-                </p>
-                <p className="about__skills">
-                    <BiCheck size={25} className='icon'/>
-                    Bathing, dressing and grooming assistance
-                </p>
-                <p className="about__skills">
-                    <BiCheck size={25} className='icon'/>
-                    Medication reminders
-                </p>
-                <p className="about__skills">
-                    <BiCheck size={25} className='icon'/>
-                    Safety and fall prevention
-                </p>
-                <p className="about__skills">
-                    <BiCheck size={25} className='icon'/>
-                    Status reporting to family
-                </p>
-                
-            </div>
-            <div className="col-6">
-            <p className="about__skills">
-                    <BiCheck size={25} className='icon'/>
-                    Light housekeeping
-                </p>
-                <p className="about__skills">
-                    <BiCheck size={25} className='icon'/>
-                    Meal preparation and nutrition
-                </p>
-                <p className="about__skills">
-                    <BiCheck size={25} className='icon'/>
-                    Grocery shopping and errands
-                </p>
-                <p className="about__skills">
-                    <BiCheck size={25} className='icon'/>
-                    Assistance with light exercise
-                </p>
-                <p className="about__skills">
-                    <BiCheck size={25} className='icon'/>
-                    Transportation to social & recreational activities
-                </p>
-            </div>
-        </div>
-       
+        </div>           
     </div>
   )
 }

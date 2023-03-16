@@ -2,8 +2,7 @@ import React from 'react'
 import Img1 from '../../../assets/1.jpg'
 
 
-const ServicesGallery = ({gallery}) => {
-    console.log(gallery)
+const ServicesGallery = ({gallery}) => {   
   return (
     <div className="gallery">
         {gallery.length > 0  ? gallery.map((image, index) =>(
