@@ -1,21 +1,105 @@
+@use '../abstracts/'as *;
 .modal{
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #dedede;
+    background: #fff;
     z-index: 200;
     text-align: center;
     box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.2);
     padding: 3rem;
     opacity: 0;
-    animation: animateModal 500ms ease-in forwards;
-}
-.modal:hover{
-    background: #dedede; 
+    animation: openModal 500ms ease-in forwards;
+
+    .row{
+        justify-content: center;
+       }
+    
+    h3{
+        position: relative;
+        font-size: 2.7rem;
+        color: #555;
+        line-height: 3.2rem;
+        font-weight: 700;
+        
+        &::after{
+            content: '';
+            position: absolute;            
+            bottom: -2rem;
+            display: block;
+            width: 20rem;
+            height: .2rem;
+            background: #e12454;
+            width: 60%;
+            left: 50%;
+            transform: translateX(-50%);
+        }       
+       
+    }
+
+    input{
+        width: 100%;
+        outline: none;
+        border: 1px solid #eee;
+        background-color: #ebf5f5;
+        color: #888;
+        font-weight: inherit;
+        padding: 3px 20px;
+        height: 50px;
+    }
+    input:focus{
+        border-color: #e12454;
+    }
+
+    textarea{
+        background-color: #ebf5f5;
+        resize: none;
+    }
+    textarea:focus{
+        border-color: #e12454;
+    }
+    
+    .btn--form{
+        background-color: #e12454;
+        color: #fdf2e9;
+        align-self: end;
+        padding: 1.2rem;
+        width: 90%;
+        align-items: center;
+    }
+
+    .toggle-close{
+        @include position(fixed, 3.2rem, null, null, 3.9rem, null, null);
+        cursor: pointer;
+        z-index: 5;
+    
+        span:nth-child(1){
+            @include toggleSpans($main2, 3rem, 1.5px, .5rem);
+            transform: rotate(-45deg) translateY(.5rem);
+        }
+        span:nth-child(2){
+            display: none;
+        }
+        span:nth-child(3){
+            @include toggleSpans($main2, 3rem, 1.5px, .5rem);
+            transform: rotate(45deg) translateY(-.5rem);
+        }
+    }
+    .toggle__background{
+        @include position(fixed, 1.5rem, null, null, 2.5rem, null, null);
+        background-color: rgba($white, 0.2);
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        z-index: 2;
+        box-shadow: 0 1rem 3rem rgba($black, 0.1);
+        cursor: pointer;
+    }
 }
 
-@keyframes animateModal {
+
+@keyframes openModal {
     to {
         opacity: 1;
     }

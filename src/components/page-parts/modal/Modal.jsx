@@ -9,8 +9,8 @@ const Modal = ({className, children}) => {
         <>
             {
                 showModal.showModal && ReactDOM.createPortal(<>
-                    <section id="backdrop" onClick={() => closeModal(setShowModalDispatch)}>
-                        <div className={className}>{children}</div>
+                    <section id="backdrop">
+                        <div className={className}>{children}</div>                        
                     </section>                    
                     </>, document.querySelector('#overlays'))
             }
