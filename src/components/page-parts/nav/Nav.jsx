@@ -19,7 +19,7 @@ const Nav = () => {
   }, []);
 
   const handleScroll = () =>{
-    const element = document.querySelector('.header')
+    const element = document.querySelector('.nav')
     newValue = window.pageYOffset;
 
     if (oldValue < newValue && window.scrollY > 400 && window.innerWidth > 992 ) {      

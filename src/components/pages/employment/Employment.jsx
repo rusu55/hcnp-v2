@@ -1,11 +1,14 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { BiCheck, BiRadioCircleMarked } from "react-icons/bi";
 
+import { GlobalContext } from '../../../context/Provider';
+import {openModal} from '../../../context/actions/setModal';
 
 import Img2 from '../../../assets/2.jpg';
 import Img3 from '../../../assets/3.jpg';
 
 const Employment = () => {
+    const {showModal, setShowModalDispatch} = useContext(GlobalContext)
   return (
     <section id='employment' className='employment pt-4 pb-4'>
             <div className="container" data-aos="fade-right">
@@ -22,6 +25,9 @@ const Employment = () => {
                                     <p><BiRadioCircleMarked size={25} className='icon'/>Carry out the billing services</p>
                                     <p><BiRadioCircleMarked size={25} className='icon'/>Make phone calls to check the status</p>
                                     <p><BiRadioCircleMarked size={25} className='icon'/>Set up scheduling & answering meetings</p>
+                            </div>
+                            <div className=' button row'>
+                                <button className='btn__primary mt-4' onClick={() => openModal(setShowModalDispatch)}>Apply for RN Job</button>
                             </div>
                         </div>
                     </div>

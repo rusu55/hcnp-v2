@@ -152,3 +152,17 @@ textarea{
     margin-top: 1rem;
     padding-right: 2rem;
 }
+
+.btn__primary{
+    display: inline-block;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background:red;
+    color: white;
+    padding: 0.6rem 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 2rem;
+    cursor: pointer;
+}
