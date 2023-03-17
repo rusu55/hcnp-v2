@@ -13,7 +13,8 @@
     animation: openModal 500ms ease-in forwards;
     
     @include responsive(medium){
-        width:80%
+        width:80%;
+        padding:1.8rem;
     }
     .row{
         justify-content: center;
@@ -25,6 +26,11 @@
         color: #555;
         line-height: 3.2rem;
         font-weight: 700;
+
+        @include responsive(small){
+            font-size: 2rem;
+            line-height: 2.6rem;
+        }
         
         &::after{
             content: '';
@@ -50,19 +56,15 @@
         font-weight: inherit;
         padding: 3px 20px;
         height: 50px;
+
+        @include responsive(small){
+            width:80%
+        }
     }
     input:focus{
         border-color: #e12454;
     }
-
-    textarea{
-        background-color: #ebf5f5;
-        resize: none;
-    }
-    textarea:focus{
-        border-color: #e12454;
-    }  
-      
+   
     
     .btn--form{
         background-color: #e12454;

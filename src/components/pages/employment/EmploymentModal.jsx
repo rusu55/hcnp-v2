@@ -27,7 +27,7 @@ const EmploymentModal = () => {
             </div>
             <div className="col-5">
             <label>Job *</label>                
-                <div className='selectdiv'>
+                <div className='select-box'>
                     <label>
                     <select>
                         <option selected>Select JOB</option>
@@ -38,11 +38,7 @@ const EmploymentModal = () => {
                 </div>
             </div>
         </div>
-        <div className="row gap-2 mt-2">          
-            <label>Message *</label>
-            <textarea cols="40" rows="10" />                    
-            <button className="btn btn--form">Send Message</button>        
-        </div>
+       
         <div className='toggle-close' onClick={()=>closeModal(setShowModalDispatch)}>
             <span></span>
             <span></span>
