@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className='footer'>
     <div className="container">
-        <div className="row">
+        <div className="row space-arround">
             <div className="col-6 footer__items">
               <h3>HCNP </h3> 
               <span>Home Care Nursing</span>               
