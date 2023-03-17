@@ -1,4 +1,9 @@
 @use '../abstracts/'as *;
+#backdrop{
+    @include position(fixed, 0, 0, 0, 0 , 100%, 100%);
+    background: rgba(0, 0, 0, .4);
+    z-index:6;
+}
 .modal{
     position: fixed;
     top: 50%;
@@ -63,16 +68,20 @@
     }
     input:focus{
         border-color: #e12454;
-    }
+    }  
+
    
     
-    .btn--form{
-        background-color: #e12454;
-        color: #fdf2e9;
-        align-self: end;
-        padding: 1.2rem;
-        width: 90%;
-        align-items: center;
+    .btn{
+        width: 80%;
+        padding: 1rem;
+        margin-top: 6rem;
+        @include responsive(medium){
+            margin-top:1rem;
+        }
+        @include responsive(small){
+            margin: 3rem 0 3rem 0;
+        }
     }
 
     .toggle-close{

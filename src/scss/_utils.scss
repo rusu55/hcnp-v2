@@ -119,18 +119,21 @@ input{
 
 /* Customized Select */
 
+.select-box{
+    position: relative;
+}
+
  select{
-       display: none;  
-       position: relative;
+       display: none;       
 }
 .select-box:after {
-  content: '<>';    
+  content: '< >';    
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
-  left: 70px;
-  top: 0;  
+  left: 90%;
+  top: 30%;  
   padding: 0 0 2px;
   border-bottom: 1px solid #999;  
   position: absolute;

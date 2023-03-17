@@ -27,24 +27,25 @@ const EmploymentModal = () => {
             </div>
             <div className="col-5">
             <label>Job *</label>                
-                <div className='select-box'>
-                    <label>
+                <div className='select-box'>                    
                     <select>
                         <option selected>Select JOB</option>
                         <option value="0">RN Job</option>
                         <option value="1">Home Health Aid</option>
-                    </select>
-                    </label>
+                    </select>                    
                 </div>
             </div>
         </div>
-       
+        <div className='row'>
+            <button className='btn' >Apply</button>
+         </div>
         <div className='toggle-close' onClick={()=>closeModal(setShowModalDispatch)}>
             <span></span>
             <span></span>
             <span></span>
         </div> 
         <div className="toggle__background"></div> 
+        
     </Modal>
   )
 }
