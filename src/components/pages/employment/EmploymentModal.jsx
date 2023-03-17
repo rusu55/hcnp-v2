@@ -26,8 +26,16 @@ const EmploymentModal = () => {
                 <input type='text' name=''  placeholder='e.g. John Doe' ></input>
             </div>
             <div className="col-5">
-            <label>Phone No *</label>                
-                <input type='email' name=''  placeholder='e.g. John Doe' ></input>
+            <label>Job *</label>                
+                <div className='selectdiv'>
+                    <label>
+                    <select>
+                        <option selected>Select JOB</option>
+                        <option value="0">RN Job</option>
+                        <option value="1">Home Health Aid</option>
+                    </select>
+                    </label>
+                </div>
             </div>
         </div>
         <div className="row gap-2 mt-2">          

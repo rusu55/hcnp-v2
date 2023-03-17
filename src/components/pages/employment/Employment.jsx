@@ -14,20 +14,20 @@ const Employment = () => {
             <div className="container" data-aos="fade-right">
                 <div className="row">                    
                     <div className="col-6 blue">
-                        <div className="card pl-8 pr-8 mt-10">
+                        <div className="card">
                             <h3 className="heading">RNs</h3>
-                            <p className='paragraph pt-1'>We need you to be the consultant for patients and clients who visit our center for advice on their health problems.</p>
+                            <p className='paragraph'>We need you to be the consultant for patients and clients who visit our center for advice on their health problems.</p>
                         </div>
-                        <div className="card--body mt-5 pl-5 pr-5">
+                        <div className="card--body">
                             <h4>Responsabilities</h4>
-                            <div className="tasks pt-2">
+                            <div className="tasks">
                                     <p><BiRadioCircleMarked size={25} className='icon'/>Welcome visitors, clients and patients</p>
                                     <p><BiRadioCircleMarked size={25} className='icon'/>Carry out the billing services</p>
                                     <p><BiRadioCircleMarked size={25} className='icon'/>Make phone calls to check the status</p>
                                     <p><BiRadioCircleMarked size={25} className='icon'/>Set up scheduling & answering meetings</p>
                             </div>
-                            <div className=' button row'>
-                                <button className='btn__primary mt-4' onClick={() => openModal(setShowModalDispatch)}>Apply for RN Job</button>
+                            <div className='button row'>
+                                <button className='btn__primary' onClick={() => openModal(setShowModalDispatch)}>Apply for RN Job</button>
                             </div>
                         </div>
                     </div>
@@ -36,21 +36,24 @@ const Employment = () => {
                     </div>
                 </div>
                 <div className="row"> 
-                <div className="col-6">
+                    <div className="col-6">
                         <img src={Img3} alt="" />
                     </div>                   
                     <div className="col-6 blue">
-                        <div className="card pl-8 pr-8 mt-10">
+                        <div className="card">
                             <h3 className="heading">Home Health Aides</h3>
                             <p className='paragraph'>We need you to be the consultant for patients and clients who visit our center for advice on their health problems.</p>
                         </div>
-                        <div className="card--body mt-5 pl-5 pr-5">
+                        <div className="card--body">
                             <h4>Responsabilities</h4>
                             <div className="tasks">
                                     <p><BiRadioCircleMarked size={25} className='icon'/>Welcome visitors, clients and patients</p>
                                     <p><BiRadioCircleMarked size={25} className='icon'/>Carry out the billing services</p>
                                     <p><BiRadioCircleMarked size={25} className='icon'/>Make phone calls to check the status</p>
                                     <p><BiRadioCircleMarked size={25} className='icon'/>Set up scheduling & answering meetings</p>
+                            </div>
+                            <div className='button row'>
+                                <button className='btn__primary' onClick={() => openModal(setShowModalDispatch)}>Apply for RN Job</button>
                             </div>
                         </div>
                     </div>

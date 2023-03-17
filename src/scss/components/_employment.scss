@@ -25,34 +25,49 @@
             left: 50%;
             transform: translateX(-50%);
         }
-    
+
+        .heading{
+            font-size: 3rem;
+            color: $grey;
+            font-weight: 700;
+            line-height: 4rem;
+            width: 100%;
+            text-align: left;
+            position: relative;
+            padding: 3rem 0 3rem 3rem;    
+            
+            @include responsive(medium){
+                padding: 1rem 0 1rem 1rem;
+            }
+        }
+
+        .paragraph{
+            font-size: 1.4rem;
+            line-height: 2.7rem;
+            color: $grey;
+            font-weight: 200;
+            padding: 0 2rem 0 2rem;               
+           
+        }    
     }
-    
-    .heading{
-       
-        font-size: 3rem;
-        color: $grey;
-        font-weight: 700;
-        line-height: 4rem;
-        width: 100%;
-        text-align: left;
-        position: relative;
-        margin-bottom: 1rem;   
-        margin-top: 3rem;         
-    }
-    .paragraph{
-        font-size: 1.4rem;
-        line-height: 2.7rem;
-        color: $grey;
-        font-weight: 200;
-        margin-top: 1rem;        
-    }
+    .card--body{
+        h4{
+            padding: 3rem 0 2rem 3rem;
+        }
+        @include responsive(medium){
+            padding: 0 0 0 1rem;
+        }
+    }  
+   
 
     img{
-        max-height: 58.5rem;
+        width: 100%;
         overflow: hidden;
         display: block;
        
+        @include responsive(small){
+            margin: 2rem 0 2rem 0;
+        }
     }
 
     .tasks{
@@ -72,6 +87,16 @@
     .button{
         justify-content: center;
         align-items: center;
+
+        .btn__primary{
+            margin-top: 6rem;
+            @include responsive(medium){
+                margin-top:1rem;
+            }
+            @include responsive(small){
+                margin: 3rem 0 3rem 0;
+            }
+        }
     }
 }
 

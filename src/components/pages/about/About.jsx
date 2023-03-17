@@ -22,11 +22,11 @@ const About = () => {
           <div className="col-8"><AboutIntro/></div>
           <div className="col-4 row"><AboutRight/></div>
         </div>
-        <div className="row">
-          <div className="col-6">
+        <div className="row mt-5">
+          <div className="col-6 flex">
               <ServicesDetails title='Caregiving  Services We Provide:' services={caregiving}/>
           </div>
-          <div className="col-6">
+          <div className="col-6 ml-2 flex">
               <ServicesDetails title='Nursing Services We Provide' services={nursing}/>
           </div>
         </div>

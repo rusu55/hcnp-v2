@@ -19,8 +19,16 @@
     .icon{
         color: red;
     }
-       
+    
 }
+
+.about__skills{        
+    font-size: 1.4rem;
+    line-height: 2.7rem;
+    padding: .5rem;
+    @include align(flex, null, start, null);      
+}
+   
 
 .about__intro_heading{
     width: 35%;
@@ -45,6 +53,8 @@
     line-height: 2.2rem;
     margin-bottom: 2rem;
 }
+
+
 
 
 
@@ -148,7 +158,7 @@
       }
 
       .about__services{
-        margin: .3rem;
+        margin: .3rem;        
         background: #ebf5f5;
         padding: 1.5rem;
         border: 2px solid transparent;
@@ -157,7 +167,7 @@
       }
       .about__services:hover{
        
-        transform: translateY(-0.5rem);
+        transform: translateY(-2rem);
       }
 
       .service__card{        
@@ -166,4 +176,8 @@
             padding: .5rem;
             @include align(flex, null, start, null);      
       }
+
+      .services__title{
+            text-align: center;
+      }   
 }

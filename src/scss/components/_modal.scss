@@ -11,7 +11,10 @@
     padding: 3rem;
     opacity: 0;
     animation: openModal 500ms ease-in forwards;
-
+    
+    @include responsive(medium){
+        width:80%
+    }
     .row{
         justify-content: center;
        }
@@ -58,7 +61,8 @@
     }
     textarea:focus{
         border-color: #e12454;
-    }
+    }  
+      
     
     .btn--form{
         background-color: #e12454;

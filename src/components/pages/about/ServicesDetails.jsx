@@ -5,7 +5,7 @@ import Service from './Service';
 const ServicesDetails = ({services, title}) => {    
   return (
     <div className="about__services" data-aos=''>
-      <h3 className="service__title">
+      <h3 className="pb-4 services__title">
         {title}
       </h3>
         {
