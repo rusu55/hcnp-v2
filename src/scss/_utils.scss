@@ -180,17 +180,29 @@ textarea{
 
 .btn, .btn:link, .btn:visited{
     display: inline-block;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     text-decoration: none;
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 1.7rem;
+    font-weight: 400;
     padding: 1.6rem 3.2rem;
-    border-radius: 9px;
-    border: none;
+    border: 2px solid transparent;
+    border-radius: 6px;    
     cursor: pointer;
-    font-family: inherit;
-    /* transition: background-color 0.3s; */
+    font-family: inherit;   
+    color: #fdf2e9;
+    background-color: $red-1;
     transition: all 0.3s;
 
+    &:hover{
+        background-color: transparent !important;
+        border-color: $red-1!important;
+        transform: translateY(-0.5rem);
+        color: $red-1 !important;
+    }
 }
 
 .paragraph{
@@ -202,17 +214,4 @@ textarea{
     padding-right: 2rem;
 }
 
-.btn__primary{
-    display: inline-block;
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    background:red;
-    color: white;
-    padding: 0.6rem 2.5rem;
-    border: 2px solid transparent;
-    border-radius: 2rem;
-    cursor: pointer;
-}
 

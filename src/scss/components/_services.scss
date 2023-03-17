@@ -26,7 +26,21 @@
    
      .icon{
         color:#e12454;
+
+        &__rotate{
+            color:#e12454;
+            transform: rotate(90deg);
+            transition: transform .5s linear;
+         }
+         &__back{
+            color:#e12454;
+            transform: rotate(0deg);
+            transition: transform .5s linear;
+         }
      }
+
+     
+
      &__container{
         @include responsive(medium){
             padding-top: 5rem;
@@ -44,8 +58,7 @@
             padding: 1.5rem;
             @include align(flex, null, center, null);
             text-transform: capitalize;
-           
-           
+            gap:2rem;           
         }
 
         &__details{

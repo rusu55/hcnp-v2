@@ -27,7 +27,7 @@ const Employment = () => {
                                     <p><BiRadioCircleMarked size={25} className='icon'/>Set up scheduling & answering meetings</p>
                             </div>
                             <div className='button row'>
-                                <button className='btn__primary' onClick={() => openModal(setShowModalDispatch)}>Apply for RN Job</button>
+                                <button className='btn btn__primary' onClick={() => openModal(setShowModalDispatch)}>Apply for Job</button>
                             </div>
                         </div>
                     </div>
@@ -53,7 +53,7 @@ const Employment = () => {
                                     <p><BiRadioCircleMarked size={25} className='icon'/>Set up scheduling & answering meetings</p>
                             </div>
                             <div className='button row'>
-                                <button className='btn__primary' onClick={() => openModal(setShowModalDispatch)}>Apply for RN Job</button>
+                                <button className='btn btn__primary' onClick={() => openModal(setShowModalDispatch)}>Apply for Job</button>
                             </div>
                         </div>
                     </div>

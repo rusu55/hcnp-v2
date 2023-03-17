@@ -22,7 +22,7 @@ const About = () => {
           <div className="col-8"><AboutIntro/></div>
           <div className="col-4 row"><AboutRight/></div>
         </div>
-        <div className="row mt-5">
+        <div className="row mt-5" data-aos="fade-right">          
           <div className="col-6 flex">
               <ServicesDetails title='Caregiving  Services We Provide:' services={caregiving}/>
           </div>

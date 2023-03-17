@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { BiCheck, BiPlusCircle} from "react-icons/bi";
+import {BiChevronRightCircle} from "react-icons/bi";
 
 const ServicesList = ({services}) => {   
 
@@ -11,7 +11,7 @@ const ServicesList = ({services}) => {
   return services.length > 0 ? services.map((service, index) =>(    
     <div className="services__list" key = {index}>
         <h4 className="services__list__heading" onClick={()=>showDetails(index)}>
-            <BiPlusCircle className='icon' size={25} />
+            <BiChevronRightCircle className={`${ current == index ? 'icon__rotate' : 'icon__back'} `} size={25} />
             {service.heading}</h4>
         <p className={`services__list__details ${current === index ? 'services__list__details--show' : ''}`}>{service.description}</p>
     </div>
