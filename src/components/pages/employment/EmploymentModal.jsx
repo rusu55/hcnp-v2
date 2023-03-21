@@ -4,6 +4,8 @@ import Modal from '../../page-parts/modal/Modal';
 import { GlobalContext } from '../../../context/Provider';
 import {closeModal} from '../../../context/actions/setModal';
 
+import FileUploader from '../../util/FileUploader';
+
 const EmploymentModal = () => {
     const {showModal, setShowModalDispatch} = useContext(GlobalContext)
   return (
@@ -36,6 +38,10 @@ const EmploymentModal = () => {
                 </div>
             </div>
         </div>
+        <div className='row'>
+            <label>Attach Your Resume</label>
+            <FileUploader />
+         </div>
         <div className='row'>
             <button className='btn' >Apply</button>
          </div>

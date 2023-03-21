@@ -1,8 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
 import ContactForm from './ContactForm';
 import ContactLeft from './ContactLeft';
 
-const Contact = () => {
+const Contact = () => { 
   return (
     <section id='contact' className='contact'>
       <div className="container" data-aos="fade-right">
