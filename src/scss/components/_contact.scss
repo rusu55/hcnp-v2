@@ -22,7 +22,13 @@
     font-weight: inherit;
     padding: 3px 20px;
     height: 50px;
+   
+}
+ .error::placeholder{
+        color:#e12454;
     }
+
+   
 
     input:focus{
         border-color: #e12454;

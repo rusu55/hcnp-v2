@@ -15,7 +15,9 @@ const ContactForm = () => {
      
       const [formValues, setFormValues] = useState({});
       const [formErrors, setFormErrors] = useState({});
-    
+
+      const {firstName, lastName, email, message} = formValues
+          
       const handleChange = (event) =>{
         const {name, value} =  event.target;
     
@@ -41,7 +43,7 @@ const ContactForm = () => {
       }
 
       const sendEmail = () =>{
-        const {firstName, lastName, email, message} = formValues
+        
         fetch("https://69zxy7wcg3.execute-api.us-east-1.amazonaws.com/send",
           {
             mode: "no-cors",
@@ -88,19 +90,19 @@ const ContactForm = () => {
         <div className="row gap-2 form">
             <div className="col-5">                
                 <label>First Name *</label>                
-                <input type='text'
+                <input type='text' className={formErrors.firstName ? 'error' : ''}
                     name='firstName'
                     value={formValues.firstName}
-                    placeholder='e.g. John'
+                    placeholder={formErrors.firstName ? `${formErrors.firstName}` : 'e.g. John'}
                     onChange={handleChange}
                  />
             </div>
             <div className="col-5">
                 <label>Last Name *</label>               
-                <input type='text'
+                <input type='text' className={formErrors.lastName ? 'error' : ''}
                         name='lastName'
                         value={formValues.lastName}
-                        placeholder='e.g.Doe'
+                        placeholder={formErrors.lastName ? `${formErrors.lastName}` : 'e.g. Doe'}
                         onChange={handleChange}
                     />
             </div>
@@ -108,15 +110,15 @@ const ContactForm = () => {
         <div className="row gap-2 mt-2">
             <div className="col-5">
                 <label>Email Address *</label>                
-                <input type='text'
+                <input type='text' className={formErrors.email ? 'error' : ''}
                     name='email'
                     value={formValues.email}
-                    placeholder='e.g. JohnDoe@mail.com'
+                    placeholder={formErrors.email ? `${formErrors.email}` : 'e.g. JohnDoe@mail.co'}
                     onChange={handleChange}
                  />
             </div>
             <div className="col-5">
-            <label>Phone No *</label>                
+            <label>Phone No </label>                
             <input type='text'
                     name='phone'
                     value={formValues.phone}
@@ -127,9 +129,9 @@ const ContactForm = () => {
         </div>
         <div className="row gap-2 mt-2">          
             <label>Details and Services Needed *</label>
-            <textarea cols="40" rows="10"
+            <textarea cols="40" rows="10" className={formErrors.message ? 'error' : ''}
                 name='message'
-                placeholder='write your message ....'
+                placeholder={formErrors.message ? `${formErrors.message}` : 'write your message ....'}
                 value={formValues.message}
                 onChange={handleChange}
             />                    
