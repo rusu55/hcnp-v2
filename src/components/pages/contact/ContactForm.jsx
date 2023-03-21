@@ -36,15 +36,14 @@ const ContactForm = () => {
            
             sendEmail()      
             setFormValues(initialValues)
-          }else{
-            console.log(formErrors)
+          }else{            
             return
           }        
       }
 
       const sendEmail = () =>{
         
-        fetch("https://69zxy7wcg3.execute-api.us-east-1.amazonaws.com/send",
+        fetch("https://9wag9vq9m6.execute-api.us-east-1.amazonaws.com/send",
           {
             mode: "no-cors",
             method: "POST",
@@ -59,7 +58,7 @@ const ContactForm = () => {
               message: message,              
               date: moment(new Date()).format("DD/MM/YYYY")              
             })
-          });     
+          })    
       };
 
       const validate =(values) =>{
