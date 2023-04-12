@@ -16,7 +16,7 @@ const ContactForm = () => {
       const [formValues, setFormValues] = useState({});
       const [formErrors, setFormErrors] = useState({});
 
-      const {firstName, lastName, email, message} = formValues
+      const {firstName, lastName, email, phone, message} = formValues
           
       const handleChange = (event) =>{
         const {name, value} =  event.target;
@@ -43,7 +43,7 @@ const ContactForm = () => {
 
       const sendEmail = () =>{
         
-        fetch("https://9wag9vq9m6.execute-api.us-east-1.amazonaws.com/send",
+        fetch("https://67o1h3d9gi.execute-api.us-east-2.amazonaws.com/sendSimpleEmail",
           {
             mode: "no-cors",
             method: "POST",
@@ -55,7 +55,8 @@ const ContactForm = () => {
               senderName: firstName + " " + lastName,
               senderEmail: email,
               subject: "Email received from Contact Form Website",
-              message: message,              
+              message: message,
+              phone: phone,              
               date: moment(new Date()).format("DD/MM/YYYY")              
             })
           })    
