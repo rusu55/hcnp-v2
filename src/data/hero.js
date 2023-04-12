@@ -1,6 +1,6 @@
 export const carousel = [    
-    {image: 'hero-1.jpg', title : 'Slide 2', text:'asta e textul 2'},
-    {image: 'hero-2.jpg', title : 'Slide 3', text:'asta e textul 3'},
-    {image: 'hero-3.jpg', title : 'Slide 4', text:'asta e textul 4'},
-    {image: 'hero-4.jpg', title : 'Slide 5', text:'asta e textul 5'}
+    {image: 'hero-1.jpg', title : 'HCNP - Home Care Nursing', text:'Chicago`s Premier Agency for Catastrophic Injury Care'},
+    {image: 'hero-2.jpg', title : 'HCNP - Home Care Nursing', text:'Our Company Encourages and Celebrates Diversity'},
+    {image: 'hero-3.jpg', title : 'HCNP - Home Care Nursing', text:'Our Caring Staff Provides Confort and Reassurance to Those in Need'},
+    {image: 'hero-4.jpg', title : 'HCNP - Home Care Nursing', text:'We Treat Our Clients with Dignity, Compassion and Empathy'}
 ];

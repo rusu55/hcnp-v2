@@ -13,6 +13,7 @@ const HomePageReducer = (state, {type, payload}) =>{
                 }
             }
         case HOMEPAGE_LOADING_SUCCES:
+           
             return{
                 ...state,
                 homePage:{

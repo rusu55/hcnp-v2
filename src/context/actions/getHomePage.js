@@ -6,7 +6,7 @@ export default (dispatch) =>{
         type: HOMEPAGE_LOADING,
     })
      const data =  homePageData
-    
+         
      dispatch({
          type: HOMEPAGE_LOADING_SUCCES,
          payload: data

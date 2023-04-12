@@ -26,7 +26,7 @@ const Hero = ({data}) =>{
   return (
     <div className="slider">
         {data.map((slide,index)=>(
-            <div className={index === currentSlide ? 'slide-item current' : 'slide-item'} id={index === currentSlide -1 ? 'close' : ''}>
+            <div  key={index} className={index === currentSlide ? 'slide-item current' : 'slide-item'} id={index === currentSlide -1 ? 'close' : ''}>
                 <div className={index === currentSlide ? 'item current' : 'item'}>
                     <h2>{slide.title}</h2>
                     <p>{slide.text}</p>
